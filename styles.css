@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #43a0b7;
+}
+
+.fecha-banner{
+    padding: 30px;
+    margin-left: 130px;
+}
+
+.video-index{
+height: auto;
+width: 100%;
+margin: 5px;
+
+}
+
+.imagen-banda{
+    border-image: auto;
+    flex: auto;
+    text-align:left ;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: auto(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+
